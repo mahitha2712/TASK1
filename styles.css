@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    color: #ff0;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 5rem 2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black; /* Ensure text is black */
+}
+
+#home {
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover;
+    color: black; /* Ensure text is readable */
+}
+
+.welcome-message {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Add this line for compatibility */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.section:nth-child(2) {
+    background-color: #ffcccc; /* Light red */
+}
+
+.section:nth-child(3) {
+    background-color: #f1ee23; /* Light green */
+}
+
+.section:nth-child(4) {
+    background-color: #66669c; /* Light blue */
+}
+
+.section:nth-child(5) {
+    background-color: #0de776; /* Light yellow */
+}
+
+.section:nth-child(6) {
+    background-color: #a17b74; /* Light purple */
+}
+
+.section:nth-child(7) {
+    background-color: #7a9ef1; /* Light cyan */
+}
